@@ -10,7 +10,7 @@ let myArr2 = ["milliseconds : ", "seconds : ", "minutes : ", "hours : ", "days :
 let sharks = []
 
 function preload() {
-  haj = loadImage("https://media.discordapp.net/attachments/655557115557183518/966892596641284118/haj.png");
+  haj = loadImage("haj.png");
 }
 
 function setup() {
