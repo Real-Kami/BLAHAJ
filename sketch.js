@@ -19,9 +19,9 @@ function setup() {
   background(0);
   textSize(32);
 
-  for (a = 0; a < 5; a++) {
+  for (a = 0; a < 15; a++) {
 
-    let k = random(0.5, 1);
+    let k = random(0.5, 3);
 
     let obj = {
       pos: createVector(width / 2 - haj.width / 2, height / 2 - haj.height / 2),
