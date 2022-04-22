@@ -21,7 +21,7 @@ function setup() {
 
   for (a = 0; a < 15; a++) {
 
-    let k = random(0.5, 3);
+    let k = random(0.3, 1);
 
     let obj = {
       pos: createVector(width / 2 - haj.width / 2, height / 2 - haj.height / 2),
@@ -51,7 +51,7 @@ function draw() {
   //image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight])
 
   for (a = 0; a < sharks.length; a++) {
-    image(haj, sharks[a].pos.x, sharks[a].pos.y, haj.width, haj.height, 0, 190 * sharks[a].l, 380, 190);
+    image(haj, sharks[a].pos.x, sharks[a].pos.y, haj.width * sharks[a].k, haj.height * sharks[a].k, 0, 190 * sharks[a].l, 380, 190);
     sharks[a].pos.add(sharks[a].vel);
     if (sharks[a].pos.y + sharks[a].ydist >= height || sharks[a].pos.y + sharks[a].ydist <= 0) {
       sharks[a].vel.y *= -1;
